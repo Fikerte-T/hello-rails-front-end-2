@@ -5,7 +5,6 @@ import { getDataFromApi } from '../redux/greetings';
 const Greeting = () => {
   const dispatch = useDispatch();
   const greeting = useSelector((state) => state.greetings.greetings);
-  console.log(greeting);
   useEffect(() => {
     getDataFromApi();
   }, []);
